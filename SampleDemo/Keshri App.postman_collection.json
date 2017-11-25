@@ -1,0 +1,168 @@
+{
+	"id": "41035c93-7959-b856-9c47-87f05a118098",
+	"name": "Keshri App",
+	"description": "",
+	"order": [
+		"46216c67-e8b8-bb97-0cde-6cfc4166f2c2",
+		"af7e393b-e9f0-792c-eb07-eae0ef0fcd9c",
+		"8edb9897-a470-0d31-fe20-37095c670137",
+		"1b72326c-08b1-2d17-544a-44701ea318ce",
+		"98072c6d-77b0-e277-19ae-f38cfabfe74f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1511635228920,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1b72326c-08b1-2d17-544a-44701ea318ce",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "41035c93-7959-b856-9c47-87f05a118098",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/1",
+			"description": "Update Student",
+			"descriptionFormat": "html",
+			"time": 1511635522016,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"studentId\": \"1\",\n  \"studentName\": \"Reshu 1111\"\n}"
+		},
+		{
+			"id": "46216c67-e8b8-bb97-0cde-6cfc4166f2c2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511635318379,
+			"name": "http://localhost:8080/keshriapp/StudentEndpoint/",
+			"description": "Get All Students",
+			"collectionId": "41035c93-7959-b856-9c47-87f05a118098",
+			"responses": [],
+			"rawModeData": "{\n  \"studentId\": \"1\",\n  \"studentName\": \"Reshu\"\n}"
+		},
+		{
+			"id": "8edb9897-a470-0d31-fe20-37095c670137",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "41035c93-7959-b856-9c47-87f05a118098",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/",
+			"description": "Create Student",
+			"descriptionFormat": "html",
+			"time": 1511635420914,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"studentId\": \"1\",\n  \"studentName\": \"Reshu\"\n}"
+		},
+		{
+			"id": "98072c6d-77b0-e277-19ae-f38cfabfe74f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "41035c93-7959-b856-9c47-87f05a118098",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/1",
+			"description": "Delete Student",
+			"descriptionFormat": "html",
+			"time": 1511635583472,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "af7e393b-e9f0-792c-eb07-eae0ef0fcd9c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511635390785,
+			"name": "http://192.168.0.11:8080/keshriapp/StudentEndpoint/1",
+			"description": "Get Student By Id",
+			"collectionId": "41035c93-7959-b856-9c47-87f05a118098",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,20 @@
+Soap Ui
+----------
+Click on https://www.soapui.org/downloads/soapui.html
+Click on Get It SoapUI OpenSource
+After Download install as simple application.
+After installation open SoapUi and click on Rest 
+In new Rest Project Uri  give http://maps.googleapis.com/maps/api/geocode/xml?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=false
+Click on ok.
+It will open one screen then click on Green Run Button.
+You will get Sample Xml Api Response as that api returns xml data.If it can return Json Response then you can See json also.
+The above uri is free api given by google.
+There in endpoint(http://maps.googleapis.com) google url is mentioned where that api is running.
+In Resource api url path(/maps/api/geocode/xml) is mentioned.
+In parameters we arer passing query aparam that needde for that sample api(?address=1600 Amphitheatre Parkway, Mountain View, CA&sensor=false).
+
+
+Help Url
+---------
+https://www.soapui.org/downloads/thank-you-for-downloading-soapui.html
+Here you can get some sample docs.

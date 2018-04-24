@@ -96,3 +96,13 @@ Method:DELETE
 content-type=application/json
 
 http://localhost:8080/keshriapp/StudentEndpoint/1
+
+
+Refer This Video
+---------------------
+https://www.youtube.com/watch?v=XV7WW0bDy9c&t=82s
+
+Help Url
+---------
+https://www.soapui.org/downloads/thank-you-for-downloading-soapui.html
+Here you can get some sample doc

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d2aa2de7-8f48-4e44-9676-97bf836a5423" created="2.3.0" activeEnvironment="Default environment" name="REST Project 1" resourceRoot="" updated="2.3.0 2018-03-06T16:28:42Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="6f6b9b6a-80be-445a-b75a-bf90ef139ebf" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://172.30.130.110:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://172.30.130.110:8080</con:endpoint>
+    </con:endpoints>
+    <con:resource name="StudentEndpoint" path="/keshriapp/StudentEndpoint/" id="6c670107-b9bc-4d4e-aaa0-4be3e250b80b">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="StudentEndpoint" id="92cf0814-60b8-4c78-8f53-4f213767a816" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="e5f1e842-5c8a-4fe1-8e14-c4d3caaca80c" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8080</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="70a09ab8-2b68-4ec4-b68a-d44a8c768b02" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/keshriapp/StudentEndpoint/1" path="/keshriapp/StudentEndpoint/1" id="cf95cfe2-6ed7-459b-aa3c-638ec220dd55">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="090e9cc5-ba92-49ed-861b-0c831bdcc6e9" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0 200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="GET Request" id="052db9eb-ec5c-448c-8108-0fd67b8e026a" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://192.168.0.11:8080</con:endpoint>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="ba36081d-b166-4ab2-bac6-a0643cd63471" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/keshriapp/StudentEndpoint/1" path="/keshriapp/StudentEndpoint/2" id="dcf73773-5c2d-41e0-adf5-58aba845136f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="fa48bf1b-a520-4175-96ff-24736f01c835" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ns="http://172.30.130.110/keshriapp/StudentEndpoint/2">ns:Response</con:element>
+        </con:representation>
+        <con:request name="GET Request" id="71cabcdd-ac15-4b16-8103-5ea0b71225e2" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://172.30.130.110:8080</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://172.30.130.110/keshriapp/StudentEndpoint/2</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="f7bddb23-c84e-4471-95e3-eabc0a1e75d9" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 3" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/keshriapp/StudentEndpoint/" path="/keshriapp/StudentEndpoint/" id="78c13371-dab4-47ac-8aae-ba0b6136261e">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="POST" id="7aa1e1e8-3dc0-44eb-9ada-c627ca4bf8ed" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="POST Request" id="cd2d0980-8895-4b4e-893f-d50a370aba0a" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:endpoint>http://172.30.130.110:8080</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="2f5c62a6-df42-43f4-8dec-b8ca64deddc1" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 4" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/keshriapp/StudentEndpoint/1" path="/keshriapp/StudentEndpoint/1" id="981f6a2b-8c09-46fb-8e39-d9b8951d6160">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="PUT" id="3c831de1-1c5b-4af2-b2d9-e03d710a9636" method="PUT">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="PUT Request" id="9dd3cad7-3719-49cd-8a36-862d526ccbaf" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://172.30.130.110:8080</con:endpoint>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="cf09b21f-83b6-49d1-80ba-ec5a1385084d" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 5" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints/>
+    <con:resource name="/keshriapp/StudentEndpoint/1" path="/keshriapp/StudentEndpoint/1" id="c6b35fd1-56c5-41b5-9160-a3e54a15ec32">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="DELETE" id="c972ee7a-049c-47f1-9a1a-b794c69a8706" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="DELETE Request" id="ca543657-5f73-430b-82d8-3032cf9e10a6" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://172.30.130.110:8080</con:endpoint>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="6169e06d-04a6-45f0-98de-7d18dd279862" name="TestSuite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="e8ca83e7-dab9-41f2-8adb-b8125eac41f0" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetAll_TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="Request 1" id="57f1dfa5-235a-47ec-b6fa-f0860a7d77ba">
+        <con:settings/>
+        <con:config service="http://172.30.130.110:8080" resourcePath="/keshriapp/StudentEndpoint/" methodName="StudentEndpoint" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request 1" id="e5f1e842-5c8a-4fe1-8e14-c4d3caaca80c" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://172.30.130.110/keshriapp/StudentEndpoint/</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="6d65c14f-8b6f-4fae-a9f9-c2adf3623ce8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetById_TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="REST Request" id="c054b6a4-a78b-4c0c-97a5-0933b937913f">
+        <con:settings/>
+        <con:config service="REST Service 2" resourcePath="/keshriapp/StudentEndpoint/2" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="71cabcdd-ac15-4b16-8103-5ea0b71225e2" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://172.30.130.110/keshriapp/StudentEndpoint/1</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="060ebc97-3109-445b-ad04-bbe5fe9b319b" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="AddStudent_TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="REST Request" id="7e77c385-279b-4bfa-8717-126b037995c9">
+        <con:settings/>
+        <con:config service="REST Service 3" resourcePath="/keshriapp/StudentEndpoint/" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="cd2d0980-8895-4b4e-893f-d50a370aba0a" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+            <con:request>{
+  "studentId": "1",
+  "studentName": "Google 1111"
+}</con:request>
+            <con:originalUri>http://172.30.130.110/keshriapp/StudentEndpoint/</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="a0c80fa3-d79f-4be1-8090-317e27168b48" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="UpdateStudent_TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="REST Request" id="d64f1851-806c-48b7-868c-79b2712e57a5">
+        <con:settings/>
+        <con:config service="REST Service 4" resourcePath="/keshriapp/StudentEndpoint/1" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="9dd3cad7-3719-49cd-8a36-862d526ccbaf" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+            <con:request>{
+  "studentId": "1",
+  "studentName": "1111"
+}</con:request>
+            <con:originalUri>http://172.30.130.110/keshriapp/StudentEndpoint/1</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="82588858-5bd9-49fa-8402-2f9a7d610094" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DeleteStudent_TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="REST Request" id="091b0090-ede5-4d4d-bad6-723096b23612">
+        <con:settings/>
+        <con:config service="REST Service 5" resourcePath="/keshriapp/StudentEndpoint/1" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="ca543657-5f73-430b-82d8-3032cf9e10a6" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8080</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>

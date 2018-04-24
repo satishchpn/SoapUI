@@ -16,7 +16,7 @@ Click On File
 >>when completed
 >>Open application.properties
 
->>server.address=<Your Ip Address>/<localhost
+>>server.address=localhost(if want change it to ip address,better keep localhost)
 >
 >Main.java
 
@@ -106,3 +106,24 @@ Help Url
 ---------
 https://www.soapui.org/downloads/thank-you-for-downloading-soapui.html
 Here you can get some sample doc
+
+
+
+
+
+Soap Ui
+----------
+Click on https://www.soapui.org/downloads/soapui.html
+Click on Get It SoapUI OpenSource
+After Download install as simple application.
+After installation open SoapUi and click on 
+File>>Import Project>>REST-Project-1-readyapi-project.xml open file
+Execute Each Case.
+
+Try to create new project by yourself and add test cases and assertions by seeing video.
+If need any help ping me.
+
+Help Url
+---------
+https://www.soapui.org/downloads/thank-you-for-downloading-soapui.html
+Here you can get some sample docs.

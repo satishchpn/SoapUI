@@ -1,0 +1,98 @@
+Click On File
+
+>>Import
+>>Maven
+
+>>Existing Maven Project
+
+>>Browse and select project
+
+>>Right Click on Project
+
+>>Maven
+
+>>Update Project
+>>tick force upadte
+>>when completed
+>>Open application.properties
+
+>>server.address=<Your Ip Address>/<localhost
+>
+>Main.java
+
+>>Right Click Run As Java Application
+
+>>Open Postman
+ 
+
+1.Create Student
+
+---------------
+
+Method:POST
+
+content-type=application/json
+
+http://localhost:8080/keshriapp/StudentEndpoint/
+
+
+Post Body
+{
+  "studentId": "1",
+  "studentName": "Google 1111"
+}
+
+
+
+
+2.Get all
+
+--------
+
+Method:GET
+
+content-type=application/json
+
+http://localhost:8080/keshriapp/StudentEndpoint/
+
+
+
+3.Get By Id
+
+-----------
+
+Method:GET
+
+content-type=application/json
+
+http://localhost:8080/keshriapp/StudentEndpoint/1
+
+
+
+
+4.Update By Id
+
+-----------
+
+Method:UPDATE
+
+content-type=application/json
+
+http://localhost:8080/keshriapp/StudentEndpoint/1
+
+{
+  "studentId": "1",
+  "studentName": "1111"
+}
+
+
+
+5.Delete By Id
+
+------------
+
+Method:DELETE
+
+content-type=application/json
+
+http://localhost:8080/keshriapp/StudentEndpoint/1
